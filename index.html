@@ -151,6 +151,8 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 					<p>라이믹스는 XE를 기반으로 하고 있지만, XE와 차별화 된 기능을 제공합니다. 관리자 페이지의 디자인 뿐만 아니라 대용량 업로드 등 사용자를 배려하는 기능들이 많이 있습니다.</p>
 					<h2 id="UMAN_developer">애드온에서도 트리거가 사용이 가능!</h2>
 					<p>XE에서는 트리거를 모듈에서만 사용이 가능했지만, 라이믹스에서는 애드온에서도 트리거 사용이 가능합니다!</p>
+					<h2 id="UMAN_etc">그 외의 차이점은 아래의 사이트에서</h2>
+					<p>라이믹스와 XE의 차이점에 대한 자세한 내용은 (<a href="https://www.gaonwiki.com/w/라이믹스#XE와의 차이점" target="_blank">https://www.gaonwiki.com/w/라이믹스#XE와의 차이점</a>)에서 확인해 주세요.</p>
 				</section>
 				<section class="h2">
 					<h1 id="UMAN_terminology">용어 정리</h1>
@@ -172,7 +174,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						<dt id="UMAN_terminology_XEfeature">XE 추가 기능</dt>
 						<dd>사용자가 사이트를 더 편리하게 운영하도록 코어에 추가할 수 있는 구성 요소. XE 추가 기능에는 모듈, 애드온, 위젯, 스킨, 위젯 스타일, 레이아웃이 있습니다.</dd>
 						<dt id="UMAN_terminology_XE">XE</dt>
-						<dd>XpressEngine의 약어. 서버 컴퓨터에 설치해서 쓰는 오픈 소스 웹 사이트 제작 프로그램이며, 공식 사이트는 <a href="http://www.xpressengine.com/" target="_blank">http://www.xpressengine.com/</a>입니다.</dd>
+						<dd>XpressEngine의 약어. 서버 컴퓨터에 설치해서 쓰는 오픈 소스 웹 사이트 제작 프로그램이며, 공식 사이트는 <a href="https://www.xpressengine.com/" target="_blank">https://www.xpressengine.com/</a>입니다.</dd>
 						<dt id="UMAN_terminology_virtualsite">가상 사이트</dt>
 						<dd>XE에서 만들어진 웹 페이지를 XE의 기본 사이트와 다른 별개의 사이트처럼 사용할 수 있는 기능.</dd>
 						<dt id="UMAN_terminology_layout">레이아웃</dt>
@@ -266,7 +268,8 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						<p>라이믹스를 사용하여 사이트를 생성하려면 당연하지만 라이믹스를 설치해야 합니다. 라이믹스가 있어야 사용자가 추가 기능(모듈, 레이아웃, 스킨 등)을 설치하고 실행할 수 있습니다.</p>
 						<p>최신 라이믹스 설치 파일은 <a href="https://github.com/rhymix/rhymix" target="_blank">https://github.com/rhymix/rhymix</a>에서 무료로 다운로드할 수 있습니다.</p>
 						<blockquote> <strong>참고</strong>
-							<p>라이믹스는 </p>
+							<p>라이믹스는 비주기적으로 업데이트 됩니다. 따라서 자주 저장소에 접속하여 업데이트 여부를 확인하시기 바랍니다.</p>
+							<p>라이믹스 사용시 쉬운 설치에서 XE Core 업데이트 버튼이 활성화 되어 있습니다. 업데이트 버튼을 누르지 마시고, 저장소에 있는 파일로 업데이트를 진행하셨다면 무시하시길 바랍니다.</p>
 						</blockquote>
 						<p>다운로드 받은 라이믹스 설치 파일의 압축을 해제한 후 서버에 업로드하려면 zip 파일을, 압축 파일을 서버에 업로드한 후 압축을 해제하려면 tgz 파일을 다운로드합니다. 각 형식의 파일 업로드 방식은 &quot;라이믹스 설치 파일 형식별 업로드 방법&quot;을 참조하십시오.</p>
 					</section>
@@ -281,39 +284,42 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 					<h1 id="UMAN_core_install">라이믹스 설치</h1>
 					<p>라이믹스를 설치하는 과정은 은근 쉽습니다. DB 정보, 관리자 정보 등만 입력하면 끝이지요.</p>
 					<ol>
-						<li>웹 브라우저를 통해 XE core 설치 파일을 업로드한 경로(www.example.com 또는 www.example.com/xe)로 접근합니다.</li>
-						<li> 다음과 같이 사용할 언어를 선택하는 화면에서 원하는 언어를 선택하시고 '다음' 버튼을 누릅니다.
-							<figure> <img src="img/install/language_select.PNG" width="811" height="535" alt="설치 언어 선택"> </figure>
+						<li>웹 브라우저를 통해 라이믹스 설치 파일을 업로드한 경로(www.example.com)로 접근합니다.</li>
+						<li>다른 언어를 사용하려면 하단에 해당 언어를 선택해 주세요.</li>
+						<li> 사용권(GPL)에 동의를 한 후에 사용이 가능합니다. 동의에 체크 후 '다음' 버튼을 누릅니다.
+							<figure> <img src="img/install/license_agree.PNG" width="811" height="535" alt="설치 언어 선택"> </figure>
 							<blockquote> <strong>참고</strong>
-								<p>페이지에 접근은 되지만 이미지가 제대로 보이지 않거나 내용이 비어 있으면, XE core 설치 파일을 다시 업로드해야 합니다.</p>
+								<p>페이지에 접근은 되지만 이미지가 제대로 보이지 않거나 내용이 비어 있으면, 라이믹스 설치 파일을 다시 업로드 해보세요.</p>
 							</blockquote>
 						</li>
-						<li> 필수 설치 조건이 모두 가능으로 표시된 것을 확인하고 '설치를 진행합니다'를 클릭합니다.
-							<p>이 화면에서 '자세히'를 클릭하면 XE core를 설치할 때 최소 PHP 버전과 필수 라이브러리 설치 여부를 자동으로 확인할 수 있습니다. 필수 설치 조건에 가능으로 표시되지 않은 항목이 있으면 오류 메시지를 확인하여 해결합니다.</p>
-							<p>짧은 주소를 사용할 수 없을 경우 경고창이 나타납니다. 짧은 주소를 사용하길 원치 않을 경우에는 그대로 설치를 진행합니다.</p>
+						<li> 필수 설치 조건이 모두 가능으로 표시된 것을 확인하고 '다음'을 클릭합니다.
+							<p>이 화면에서는 라이믹스가 정상적으로 작동 할 수 있도록 필요한 프로그램/라이브러리가 설치되어 있는지, PHP는 버전까지 표시됩니다.</p>
+							<p>짧은 주소를 제외한 나머지 항목들 중에서 하나라도 오류가 발생한다면 설치를 진행 할 수 없습니다. 라이믹스 설치에 필요한 라이브러리를 반드시 설치 후 다시 진행해 주세요.</p>
+							<p>짧은 주소를 사용할 수 없을 경우(퍼미션 오류, mod_rewrite 미설치 등)에는 경고창이 나타납니다. 짧은 주소를 사용하길 원치 않을 경우에는 그대로 설치를 진행합니다. 다만 짧은 주소를 사용하는 것을 권장합니다.</p>
 							<figure> <img src="img/install/install_condition_check.PNG" width="813" height="359" alt="설치 조건 확인"> </figure>
 							<blockquote> <strong>참고</strong>
-								<p>파일 권한 설정 오류 때문에 퍼미션이 불가능으로 표시될 때는 &quot;XE 설치 시 권한 설정 누락 오류&quot;를 참조하십시오.</p>
+								<p>파일 권한 설정 오류 때문에 퍼미션이 불가능으로 표시될 때는 &quot;라이믹스 설치 시 권한 설정 누락 오류&quot;를 참조하십시오.</p>
 							</blockquote>
 						</li>
-						<li> XE에서 사용할 DBMS를 선택하고 아래의 설치를 진행합니다를 클릭합니다. 이 문서에서는 mysqli를 선택합니다.
+						<li> 라이믹스는 MySQL(MariaDB)만 지원합니다. 또한 DB 종류도 mysqli가 기본입니다. InnoDB 지원시 자동으로 사용되므로 참고하시길 바랍니다.</li>
+						<li> DB의 정보를 입력합니다. DB 이름, 아이디, 비밀번호를 입력합니다. DB 서버 주소와 서버 포트는 기본값으로 각각 localhost와 3306으로 입력되어 있으나, 서버 주소와 서버 포트가 다르다면 해당 정보를 입력하시길 바랍니다. 대부분의 호스팅은 기본값으로 작동합니다.</li>
 							<figure> <img src="img/install/db_select.PNG" width="819" height="591" alt="DB 선택"> </figure>
 							<blockquote> <strong>참고</strong>
-								<p>XE에서 사용 가능한 DBMS가 없으면 모든 항목이 비활성화됩니다. 이때는 사용할 DBMS를 직접 설치하거나, 호스팅 업체에 설치를 요청합니다.</p>
-							</blockquote>
-						</li>
-						<li> 다음과 같이 DB 정보를 입력하고, 다음을 클릭합니다. 추가적인 설정의 변경이 필요할 경우에는 '고급 설정'을 클릭해서 수정할 수 있습니다.
-							<figure> <img src="img/install/insert_db_info.PNG" width="814" height="540" alt="DB 정보 입력"> </figure>
-							<blockquote> <strong>참고</strong>
+								<p>라이믹스는 XE와 달리 Mysql(MariaDB)만 지원합니다.</p>
 								<p>DB 정보를 입력할 때 문제가 발생하면, <a href="#UMAN_error_db_account">&quot;DB 계정 정보 오류&quot;</a>를 참조하십시오.</p>
 							</blockquote>
 						</li>
-						<li>사이트 표준 시간대를 설정한 후 다음을 클릭합니다.</li>
-						<figure> <img src="img/install/environment_setting.PNG" width="813" height="359" alt="환경 설정"> </figure>
-						<li> 관리자 정보를 입력합니다. XE 1.5부터는 이메일 주소가 로그인 계정이므로 실제 관리자가 사용할 이메일 주소를 입력하시기 바랍니다.
+						<li> 관리자 정보를 입력합니다. 로그인 기본값은 이메일 주소입니다.</li>
+						<li>사이트에서 사용할 시간대를 선택하세요. 기본값은 서버의 시간입니다. 이 시간대는 라이믹스 뿐만 아니라 알림센터 등 서드파티에서도 사용합니다.</li>
+						<li>SSL을 사용 할 수 있는 사이트이면, SSL 사용을 '항상 사용'으로 선택하세요. SSL을 사용 할 수 있으면 '선택적으로'이나 '사용 안함'을 선택 하는 것을 권장하지 않습니다.</li>
+						<li>모든 정보를 입력하였으면 완료 버튼을 눌러 설치를 완료합니다.</li>
 							<figure> <img src="img/install/insert_admin_info.PNG" width="825" height="501" alt="관리자 정보 입력"> </figure>
+							<blockquote> <strong>참고</strong>
+								<p>로그인 기본값은 이메일 주소지만, 설정에서 아이디로 변경 하실 수 있습니다.</p>
+								<p>SSL 사용에 대해서는 설치가 완료된 후에도 관리자 페이지에서 언제든 변경 할 수 있습니다.</p>
+							</blockquote>
 						</li>
-						<li> 설치가 완료되면 다음과 같이 XE Home(시작 페이지)이 나타납니다.
+						<li> 설치가 완료되면 다음과 같이 XEDITION 이라는 로고가 적힌 페이지(시작 페이지)가 나타납니다.
 							<figure> <img src="img/install/complete_install.PNG" width="1181" height="842" alt="XE 초기 페이지"> </figure>
 						</li>
 					</ol>
@@ -535,7 +541,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						<p>XE 공식 사이트에서 추가 기능 소스 파일을 다운로드해서 XE 설치 서버에 업로드하는 방법입니다.</p>
 						<p>예를 들어, 소스 파일 업로드로 게시판 모듈을 설치하는 방법은 다음과 같습니다.</p>
 						<ol>
-							<li>XE 공식 사이트 자료실(<a href="http://www.xpressengine.com/download" target="_blank">http://www.xpressengine.com/download</a>)에 접속합니다.</li>
+							<li>XE 공식 사이트 자료실(<a href="https://www.xpressengine.com/download" target="_blank">https://www.xpressengine.com/download</a>)에 접속합니다.</li>
 							<li> 게시판 모듈을 하나 선택해서 내 컴퓨터에 다운로드합니다.
 								<figure> <img src="img/image011.jpg" width="519" height="460" alt="게시판 모듈 다운로드 화면"> </figure>
 							</li>
@@ -989,7 +995,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 				</section>
 				<section class="h2">
 					<h1 id="UMAN_faq_import">데이터 들여오기</h1>
-					<p>제로보드4, zb5beta 또는 다른 프로그램의 데이터를 XE 데이터로 이전할 수 있습니다. 데이터의 추출은 공식사이트의 <a href="http://www.xpressengine.com/index.php?mid=download&category_srl=18324038" target="_blank">자료실</a>에서 다운로드 받으시거나 Git을 통해 <a href="https://github.com/xpressengine/migration-tool" target="_blank">migration tool 저장소</a>를 clone 하시면 됩니다.</p>
+					<p>제로보드4, zb5beta 또는 다른 프로그램의 데이터를 XE 데이터로 이전할 수 있습니다. 데이터의 추출은 공식사이트의 <a href="https://www.xpressengine.com/index.php?mid=download&category_srl=18324038" target="_blank">자료실</a>에서 다운로드 받으시거나 Git을 통해 <a href="https://github.com/xpressengine/migration-tool" target="_blank">migration tool 저장소</a>를 clone 하시면 됩니다.</p>
 					<p>XE의 '게시물 정보'를 다른 XE사이트 게시물로 이전하는 작업을 예로 들어 설명해 드리도록 하겠습니다.</p>
 					<ol>
 						<li>공식사이트의 자료실에서 <a href="http://www.xpressengine.com/index.php?mid=download&package_srl=18324314" target="_blank">&quot;XpressEngine 데이터 추출 Ver 0.3&quot;</a>을 다운로드 받거나 <a href="https://github.com/xpressengine/migration-tool" target="_blank">migration tool 저장소</a>에서 소스를 clone 하시면 됩니다.</li>
