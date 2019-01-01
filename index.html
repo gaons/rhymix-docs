@@ -553,13 +553,13 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 				</section>
 				<section class="h2">
 					<h1 id="UMAN_feature_howto_install">추가 기능 설치 방법</h1>
-					<p>XE의 다양한 추가 기능을 설치 하는 방법에는 2가지가 있습니다. XE 공식 사이트에서 소스 파일을 다운로드해서 XE 설치 서버에 업로드하는 방법과 XE core에서 제공하는 쉬운 설치 기능을 사용하는 방법입니다.</p>
+					<p>라이믹스의 다양한 추가 기능을 설치 하는 방법에는 2가지가 있습니다. XE 공식 사이트나 XETOWN 포인트 마켓, 또는 구매한 곳에서 소스 파일을 다운로드해서 라이믹스 설치 서버에 업로드하는 방법(권장)과 라이믹스에서 제공하는 쉬운 설치 기능을 사용하는 방법(비권장)입니다.</p>
 					<blockquote> <strong>참고</strong>
-						<p>XE에서 추가 기능을 설치하는 것은 추가 기능의 소스 코드를 운영하고 있는 서버에 옮기는 것을 의미합니다. 즉, 추가 기능 설치 과정만으로는 실제 사이트에 표시할 콘텐츠를 제작할 수 없습니다. 추가 기능을 생성하여 사이트와 연동하는 과정은 <a href="#UMAN_sitebuild">&quot;사이트 만들기&quot;</a>를 참조하시기 바랍니다.</p>
+						<p>라이믹스에서 추가 기능을 설치하는 것은 추가 기능의 소스 코드를 운영하고 있는 서버에 옮기는 것을 의미합니다. 즉, 추가 기능 설치 과정만으로는 실제 사이트에 표시할 콘텐츠를 제작할 수 없습니다. 추가 기능을 생성하여 사이트와 연동하는 과정은 <a href="#UMAN_sitebuild">&quot;사이트 만들기&quot;</a>를 참조하시기 바랍니다.</p>
 					</blockquote>
 					<section class="h3">
-						<h1 id="UMAN_installby_sourceupload">소스 파일 업로드로 추가 기능 설치</h1>
-						<p>XE 공식 사이트에서 추가 기능 소스 파일을 다운로드해서 XE 설치 서버에 업로드하는 방법입니다.</p>
+						<h1 id="UMAN_installby_sourceupload">소스 파일 업로드로 추가 기능 설치(권장)</h1>
+						<p>XE 공식 사이트에서 추가 기능 소스 파일을 다운로드해서 라이믹스 설치 서버에 업로드하는 방법입니다.</p>
 						<p>예를 들어, 소스 파일 업로드로 게시판 모듈을 설치하는 방법은 다음과 같습니다.</p>
 						<ol>
 							<li>XE 공식 사이트 자료실(<a href="https://www.xpressengine.com/download" target="_blank">https://www.xpressengine.com/download</a>)에 접속합니다.</li>
@@ -567,7 +567,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 								<figure> <img src="img/image011.jpg" width="519" height="460" alt="게시판 모듈 다운로드 화면"> </figure>
 							</li>
 							<li>다운로드한 게시판 모듈(zip 파일)의 압축을 해제합니다. 압축 해제가 완료되면 board라는 디렉터리가 생성됩니다.</li>
-							<li>압축 해제한 board 디렉터리를 XE 설치 경로의 ./modules 디렉터리로 옮깁니다. 모든 모듈은 XE 설치 경로의 ./modules 디렉터리에 설치됩니다.</li>
+							<li>압축 해제한 board 디렉터리를 라이믹스 설치 경로의 ./modules 디렉터리로 옮깁니다. 모든 모듈은 라이믹스 설치 경로의 ./modules 디렉터리에 설치됩니다.</li>
 							<li> '고급 &gt; 설치된 모듈' 목록에 다음 그림과 같이 게시판 모듈이 추가되었는지 확인합니다.
 								<figure> <img src="img/admin/installed_module.PNG" alt="항목 업데이트 화면" width="441" height="306"> </figure>
 							</li>
@@ -575,30 +575,29 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						</ol>
 					</section>
 					<section class="h3">
-						<h1 id="UMAN_installby_easyinstall">쉬운 설치로 추가 기능 설치</h1>
+						<h1 id="UMAN_installby_easyinstall">쉬운 설치로 추가 기능 설치(비권장)</h1>
 						<h2 id="UMAN_ftp_config">FTP 설정</h2>
 						<p>쉬운 설치로 추가 기능을 설치하려면 쉬운 설치 사용을 위한 계정을 설정해야 합니다. 방법은 다음과 같습니다.</p>
 						<ol>
 							<li>관리자 메뉴의 '설정 &gt; FTP 설정'을 클릭합니다.</li>
 							<li> 다음과 같이 웹 서버의 FTP 계정 정보를 입력합니다.
 								<dl>
-									<dt>아이디:</dt> 
-									<dd>서버에 접근 가능한 아이디</dd>
+									<dt>FTP 서버 주소:</dt>
+									<dd>서버 주소는 라이믹스가 설치된 서버로 접근(쉬운 설치 용도로만 사용됨)하기 위한 주소입니다. 특별한 경우가 아닌 경우에는 'localhost'나, '127.0.0.1'를 입력하시면 됩니다.
+									<dt>FTP 포트:</dt>
+									<dd>FTP를 사용하기 위한 포트를 설정합니다. FTP의 기본값은 21번 입니다. 하단에 SFTP를 설정한 경우, SFTP의 기본값은 22번 입니다.</dd>
+									<dt>아이디:</dt>
+									<dd>FTP에 접속 하기 위한 계정 아이디 입니다.</dd>
 									<dt>비밀번호:</dt>
-									<dd>서버에 접근 가능한 비밀번호</dd>
+									<dd>FTP에 접속 하기 위한 계정 비밀번호 입니다.</dd>
+									<dt>Rhymix 설치 경로:</dt>
+									<dd>라이믹스가 서버의 어느 폴더에 설치되어 있는지 설정 하는 부분입니다.  자동 감지된 경로가 실제 경로와 다른 경우에만 올바르게 수정해 주시길 바랍니다.</dd>
+									<dt>Passive 모드 사용:</dt>
+									<dd>사용 하는 웹 서버가 방화벽 환경에 있어도 FTP 서비스를 정상적으로 사용 할 수 있게 하는 기능입니다. 사용하려면 서버에서 FTP Passive mode를 지원해야 합니다.</dd>
+									<dt>SFTP 사용:</dt>
+									<dd>암호화 된 FTP 방식인 SFTP(SSH File Transfer Protocol)을 사용하시려면 선택하세요. 이때에는 'ssh2' 라는 PHP 확장 기능이 설치 되어 있어야 합니다.</dd>
 								</dl>
 							</li>
-							<li> 아이디, 비밀번호 외에 추가정보의 수정이 필요한 경우에는 '고급'에서 수정할 수 있습니다.
-								<dl>
-									<dt>FTP 서버 주소:</dt> 
-									<dd>서버 주소는 XE가 설치된 서버로부터 접근하기 위한 주소입니다. 특별한 경우가 아니라면 XE는 자신이 설치된 서버에 구성 요소를 설치합니다. 따라서 자기 자신을 나타내는 주소인 localhost, 혹은 127.0.0.1을 입력합니다.</dd>
-									<dt>FTP port:</dt> 
-									<dd>FTP 포트 번호의 경우 기본적으로 21을 쓰도록 되어 있으나, 서버에 따라 설정이 다를 수도 있습니다. 21이 아닐 때에는 서버 관리자에게 문의합니다.</dd>
-									<dt>Passive 모드를 사용:</dt> 
-									<dd>클라이언트(사용할 웹 서버)가 방화벽 환경에 있어도 FTP 서비스를 정상적으로 사용할 수 있게 하는 기능입니다. 예를 선택해야 방화벽이 설치된 환경에서 FTP를 사용할 수 있습니다. 따라서 쉬운 설치 기능을 사용하려면 서버에서 FTP Passive mode를 지원해야 합니다.</dd>
-									<dt>SFTP를 사용:</dt> 
-									<dd>FTP 프로토콜을 통해 주고받는 데이터는 암호화되어 있지 않습니다. SFTP(SSH File Transfer Protocol)를 사용하면 쉬운 설치 기능을 더 안전하게 사용할 수 있습니다. SFTP는 관련 PHP 모듈이 설치되어 있어야 사용할 수 있습니다.</dd>
-								</dl>
 								<figure> <img src="img/admin/ftp_config.PNG" width="748" height="539" alt="FTP 설정"> </figure>
 							</li>
 							<li>모든 정보를 입력했으면 '저장'을 클릭합니다.</li>
@@ -607,7 +606,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						<blockquote> <strong>참고</strong>
 							<p>쉬운 설치 진행 중에 FTP 홈 디렉터리 설정 관련 오류가 발생하면 <a href="#UMAN_error_ftp_path">&quot;쉬운 설치 진행 시 FTP 홈 디렉터리 설정 오류&quot;</a>를 참조하십시오.</p>
 						</blockquote>
-						<h2 id="UMAN_use_easyinstall">쉬운 설치 사용</h2>
+						<h2 id="UMAN_use_easyinstall">쉬운 설치 사용(비권장)</h2>
 						<p>예를 들어, 쉬운 설치로 Textyle 모듈을 설치하는 방법은 다음과 같습니다.</p>
 						<ol>
 							<li>관리자 메뉴의 '고급 &gt; 쉬운 설치'를 클릭합니다.</li>
